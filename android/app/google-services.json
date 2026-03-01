@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "60111958732",
+    "project_id": "liaris-gamer-club",
+    "storage_bucket": "liaris-gamer-club.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60111958732:android:8adedbedaa86ea8cca4869",
+        "android_client_info": {
+          "package_name": "com.liarisknight.gamer_club"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_obdmAsuvCWMixQLJHOoITvVW-X5OJy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
