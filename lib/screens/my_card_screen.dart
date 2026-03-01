@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/gamer_card.dart'; // Import our new card!
 
 class MyCardScreen extends StatelessWidget {
   const MyCardScreen({super.key});
@@ -10,32 +11,21 @@ class MyCardScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children:[
-            // Placeholder for the actual card we will design in Chunk 3
-            Container(
+            // Look how clean this is! We just call our widget and pass the data.
+            const SizedBox(
               width: 300,
               height: 450,
-              decoration: BoxDecoration(
-                color: const Color(0xFF1E1E1E),
-                borderRadius: BorderRadius.circular(20),
-                boxShadow:[
-                  BoxShadow(
-                    color: const Color(0xFFFF00FF).withOpacity(0.3), // Neon pink glow
-                    blurRadius: 20,
-                    spreadRadius: 2,
-                  ),
-                ],
-              ),
-              child: const Center(
-                child: Text(
-                  'Your Gamer Card\nWill Go Here',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
-                ),
+              child: GamerCard(
+                username: 'NinjaSlayer99',
+                title: 'FPS Veteran',
+                rank: 'Diamond III',
               ),
             ),
             const SizedBox(height: 40),
             ElevatedButton.icon(
-              onPressed: () {},
+              onPressed: () {
+                // Later, this will open a screen to edit the username/colors
+              },
               icon: const Icon(Icons.edit, color: Colors.black),
               label: const Text('Edit Card', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
               style: ElevatedButton.styleFrom(
